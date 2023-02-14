@@ -46,7 +46,7 @@ const onHeal  = () => {
     
     myScore += randomHeal;
 
-    if(counter < 2){
+    if(counter < 3){
         counter ++;
         if (myScore + randomHeal > 100){
             myScore = 100;
