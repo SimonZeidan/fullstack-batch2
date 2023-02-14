@@ -48,7 +48,7 @@ const onHeal  = () => {
 
     if(counter < 3){
         counter ++;
-        if (myScore + randomHeal > 100){
+        if (myScore > 100){
             myScore = 100;
         }
         document.getElementById("player").value = myScore;
