@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kill The Monster</title>
+    <link rel="stylesheet" href="./killTheMonster.css">
+    <script src="./killTheMonster.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <h1>
+            Kill The Monster
+        </h1>
+    </div> 
+    <div class="progressBar">
+        <div class="container">
+            <label for="monster" style="margin-bottom: 10px; font-weight: bold"> Monster Health</label>
+            <progress id="monster" value="100" max="100"></progress>
+        </div>
+        <div class="container">
+            <label for="myHealth" style="margin-bottom: 10px; font-weight: bold"> Your Health</label>
+            <progress id="player" value="100" max="100"></progress>
+        </div>
+
+    </div>
+    <div class="buttonActions">
+        <input type="button" value="ATTACK" id="attack" onclick="attack()">
+        <input type="button" value="SPECIAL ATTACK" id="spattack" onclick="onSpecialAttack()">
+        
+    </div>
+    <div class="buttonActions">
+        <input type="button" value="HEAL"  id="heal" onclick="onHeal()">
+        <input type="button" value="GIVE UP" id="giveUp" onclick="onGiveUp()">
+    </div>
+    <div class="log">
+        <div class="battleLogs">
+            <h1>
+                Battle Logs
+            </h1>
+            <div class="content" id="logs">
+    
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>

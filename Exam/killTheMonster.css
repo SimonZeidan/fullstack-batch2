@@ -1,0 +1,118 @@
+body{
+    margin: 0px;
+    height: 100vh;
+    background-color: grey;  
+}
+
+.nav{
+    width: 100%;
+    background-color: red;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressBar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.progressBar .container{
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progressBar .container label {
+    font-weight: 500;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressBar .container progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    width: 100%;
+    max-width: 500px;
+}
+
+
+.buttonActions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonActions input[type = button]{
+    width: 100%;
+    max-width: 200px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: purple;
+    padding: 15px;
+    margin: 10px;
+}
+
+.log{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.battleLogs{
+    background-color: white;
+    width: 90%;
+    height: 500px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1400px) {
+    .battleLogs {
+        height: 450px;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    .battleLogs {
+        height: 450px;
+    }
+}
+
+.battleLogs input[type = button]{
+    width: 100%;
+    max-width: 200px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: purple;
+    padding: 15px;
+    margin: 10px;
+}
+
+.content{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
