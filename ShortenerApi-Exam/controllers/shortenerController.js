@@ -3,8 +3,8 @@ const shortener = require("../models/shortenerModel");
 
 exports.shortenURL = async (req,res) =>{
     try{
-        const longURL = req.body.loginURL;
-        const URLcode = loginURL.substring(0,3) + 'SHORTURL';
+        const longURL = req.body.longURL;
+        const URLcode = longURL.substring(0,3) + 'SHORTURL';
         const shortURL = 'url.go/'+ URLcode; 
 
 
