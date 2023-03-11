@@ -5,9 +5,14 @@ dotenv.config();
 
 const connectDB = async() =>{
     try{
-        await mongoose.connect(process.env.DB_URL);
+        const params = 
+            { useUnifiedTopology: true,useNewUrlParser: true }
+        mongoose.set('strictQuery', true);
+        await mongoose.connect(process.env.DB_URL,params );
     }catch (err){
-        process.exit(1);
+        // process.exit(1);
+        console.log(err);
+
     }
 }
 
